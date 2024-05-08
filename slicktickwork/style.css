@@ -25,7 +25,7 @@
 }
 
 .content {
-    width: 20%;
+    width: 10%rem;
     margin: 15px;
     box-sizing: border-box;
     float: left;
@@ -36,6 +36,7 @@
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     transition: .4s;
     background: #f2f2f2;
+    
 }
 
 .content:hover {
@@ -43,10 +44,16 @@
 }
 
 .products-image {
-    width: 200px;
-    height: 200px;
+    width: 9rem;
+    height: 9rem;
     text-align: center;
     margin: 0 auto;
     display: block;
+    border-radius: 5%;
     
+}
+
+.buylink {
+    text-decoration: none;
+    color: #000000;
 }
