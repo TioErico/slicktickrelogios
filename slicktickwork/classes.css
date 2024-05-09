@@ -43,5 +43,16 @@ body {
 
 .abouts {
     display: flex;
-    font-size: 3rem;
+    font-size: 2rem;
+    margin: 0 3rem 0 0;
+}
+
+.logo {
+    width: 13rem;
+    height: 7rem;
+}
+
+.about-txt {
+    margin: 0;
+    margin: 0 0 0 1rem;
 }

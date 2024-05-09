@@ -13,6 +13,7 @@
     font-size: 30px;
     margin: 0;
     padding-top: 10px;
+    padding: 0 10px 0 10px;
 }
 
 .gallery {
@@ -57,3 +58,4 @@
     text-decoration: none;
     color: #000000;
 }
+
