@@ -23,71 +23,79 @@
 
     <div class="gallery">
         <div class="content">
-        <a class ="buylink" href="buypage.html">
-          <img class="products-image" src="relogio2.jpeg">
+        <a class ="buylink" href="buypage.html" onclick="redirectToBuyPage('productsimages/relogio2.jpeg', 54.90)">
+          <img class="products-image" src="productsimages/relogio2.jpeg">
           <h3 class="product-title">Exemplo de relógio</h3>
           <h6>R$54,90</h6>
           </a>
         </div>
 
         <div class="content">
-          <a class ="buylink" href="buypage.html">
-            <img class="products-image" src="relogio3.jpeg">
+          <a class ="buylink" href="buypage.html" onclick="redirectToBuyPage('productsimages/relogio3.jpeg', 54.90)">
+            <img class="products-image" src="productsimages/relogio3.jpeg">
             <h3 class="product-title">Exemplo de relógio</h3>
             <h6>R$54,90</h6>
           </a>
         </div>
 
         <div class="content">
-          <a class ="buylink" href="buypage.html">
-            <img class="products-image" src="relogio4.jpeg">
+          <a class ="buylink" href="buypage.html" onclick="redirectToBuyPage('productsimages/relogio4.jpeg', 54.90)">
+            <img class="products-image" src="productsimages/relogio4.jpeg">
             <h3 class="product-title">Exemplo de relógio</h3>
             <h6>R$54,90</h6>
           </a>
         </div>
 
         <div class="content">
-          <a class ="buylink" href="buypage.html">
-            <img class="products-image" src="relogio5.jpeg">
+          <a class ="buylink" href="buypage.html" onclick="redirectToBuyPage('productsimages/relogio5.jpeg', 54.90)">
+            <img class="products-image" src="productsimages/relogio5.jpeg">
             <h3 class="product-title">Exemplo de relógio</h3>
             <h6>R$54,90</h6>
           </a>
         </div>
 
       <div class="content">
-        <a class ="buylink" href="buypage.html">
-          <img class="products-image" src="relogio5.jpeg">
+        <a class ="buylink" href="buypage.html" onclick="redirectToBuyPage('productsimages/relogio5.jpeg', 54.90)">
+          <img class="products-image" src="productsimages/relogio5.jpeg">
           <h3 class="product-title">Exemplo de relógio</h3>
           <h6>R$54,90</h6>
         </a>
       </div>
 
       <div class="content">
-        <a class ="buylink" href="buypage.html">
-          <img class="products-image" src="relogio5.jpeg">
+        <a class ="buylink" href="buypage.html" onclick="redirectToBuyPage('productsimages/relogio2.jpeg', 54.90)">
+          <img class="products-image" src="productsimages/relogio2.jpeg">
           <h3 class="product-title">Exemplo de relógio</h3>
           <h6>R$54,90</h6>
         </a>
       </div>
 
       <div class="content">
-        <a class ="buylink" href="buypage.html">
-          <img class="products-image" src="relogio5.jpeg">
+        <a class ="buylink" href="buypage.html" onclick="redirectToBuyPage('productsimages/relogio3.jpeg', 54.90)">
+          <img class="products-image" src="productsimages/relogio3.jpeg">
           <h3 class="product-title">Exemplo de relógio</h3>
           <h6>R$54,90</h6>
         </a>
       </div>
 
       <div class="content">
-        <a class ="buylink" href="buypage.html">
-          <img class="products-image" src="relogio5.jpeg">
+        <a class ="buylink" href="buypage.html" onclick="redirectToBuyPage('productsimages/relogio4.jpeg', 54.90)">
+          <img class="products-image" src="productsimages/relogio4.jpeg">
           <h3 class="product-title">Exemplo de relógio</h3>
           <h6>R$54,90</h6>
         </a>
       </div>
     </div>
 
-    <footer class="footer"><!--Adicionar links-->
+    <script>
+      function redirectToBuyPage(image, price) {
+          localStorage.setItem('selectedProductImage', image);
+          localStorage.setItem('selectedProductPrice', price);
+          window.location.href = 'buypage.html';
+      }
+  </script>
+
+    <footer class="footer">
       <img src="img/Slick_Tick.png" alt="Logo" class="footerlogo">
       <div class="abouts">
         <a class="about-txt" href="about.html">Sobre</a>

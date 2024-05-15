@@ -22,7 +22,61 @@
     </div>
 -->
 
-    <footer class="footer"><!--Adicionar links-->
+    <div id="product-box">
+    </div>
+
+    <script>
+        // Recupere os detalhes do produto selecionado do localStorage
+        var selectedProductImage = localStorage.getItem('selectedProductImage');
+        var selectedProductPrice = localStorage.getItem('selectedProductPrice');
+
+        // Crie os elementos de imagem e preço
+        var productDetails = document.getElementById('product-box');
+
+        var imageElement = document.createElement('img');
+        imageElement.src = selectedProductImage;
+        imageElement.alt = 'Produto';
+        imageElement.classList.add('productbox-image');
+        productDetails.appendChild(imageElement);
+
+        // Adicione o texto (que você escreveu) antes do preço
+        var textElement = document.createElement('p');
+        textElement.textContent = 'Relógio SOKI N10';
+        productDetails.appendChild(textElement);
+        // Adicione o texto (que você escreveu) antes do preço
+        var textElement = document.createElement('p');
+        textElement.textContent = 'Envio Internacional';
+        productDetails.appendChild(textElement);
+
+        var priceElement = document.createElement('p');
+        priceElement.textContent = 'R$' + selectedProductPrice;
+        priceElement.style.marginLeft = 'auto'; // Move o preço para a direita
+        productDetails.appendChild(priceElement);
+    </script>
+
+<!--
+    <script>
+        // Recupere os detalhes do produto selecionado do localStorage
+        var selectedProductImage = localStorage.getItem('selectedProductImage');
+        var selectedProductPrice = localStorage.getItem('selectedProductPrice');
+
+        // Crie os elementos de imagem e preço
+        var imageElement = document.createElement('img');
+        imageElement.src = selectedProductImage;
+        imageElement.alt = 'Produto';
+        imageElement.classList.add('product-image');
+
+        var priceElement = document.createElement('p');
+        priceElement.textContent = 'R$' + selectedProductPrice;
+        priceElement.classList.add('price');
+
+        // Adicione os elementos ao contêiner de detalhes do produto
+        var productDetails = document.getElementById('product-box');
+        productDetails.appendChild(imageElement);
+        productDetails.appendChild(priceElement);
+    </script>
+-->
+    <footer class="footer">
         <img src="img/Slick_Tick.png" alt="Logo" class="footerlogo">
         <div class="abouts">
             <a class="about-txt" href="about.html">Sobre</a>
