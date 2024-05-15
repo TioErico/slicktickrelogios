@@ -26,7 +26,7 @@
 }
 
 .content {
-    width: 10%rem;
+    width: 20rem;
     margin: 15px;
     box-sizing: border-box;
     float: left;
@@ -56,7 +56,7 @@
 .productbox-image {
     display: block;
     border-radius: 5%;
-    margin-right: 2rem;
+    margin-right: 4rem;
 }
 
 .buylink {
@@ -66,13 +66,15 @@
 
 #product-box {
     width: 50%;
+    height: 22rem;
     margin: 0 auto;
     margin-top: 2rem;
-    background-color: #f2f2f2;
+    background-color: #dcdcdc;
     padding: 20px;
     border-radius: 60px;
     padding-left: 3rem;
-    display: flex; /* Torna o contêiner flexível */
-    align-items: center; /* Alinha os itens verticalmente */
-    flex-direction: column; /* Alinha os itens verticalmente */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    margin-top: 40px;
 }

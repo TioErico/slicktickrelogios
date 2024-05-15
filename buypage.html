@@ -30,7 +30,7 @@
         var selectedProductImage = localStorage.getItem('selectedProductImage');
         var selectedProductPrice = localStorage.getItem('selectedProductPrice');
 
-        // Crie os elementos de imagem e preço
+        // Crie os elementos de imagem e texto
         var productDetails = document.getElementById('product-box');
 
         var imageElement = document.createElement('img');
@@ -39,21 +39,63 @@
         imageElement.classList.add('productbox-image');
         productDetails.appendChild(imageElement);
 
-        // Adicione o texto (que você escreveu) antes do preço
-        var textElement = document.createElement('p');
-        textElement.textContent = 'Relógio SOKI N10';
-        productDetails.appendChild(textElement);
-        // Adicione o texto (que você escreveu) antes do preço
-        var textElement = document.createElement('p');
-        textElement.textContent = 'Envio Internacional';
-        productDetails.appendChild(textElement);
+        var textContainer = document.createElement('div');
+        textContainer.classList.add('text-container');
 
+        var textElement1 = document.createElement('p');
+        textElement1.textContent = 'Relógio SOKI N10';
+        textElement1.classList.add('text');
+        textContainer.appendChild(textElement1);
+
+        var textElement2 = document.createElement('p');
+        textElement2.textContent = 'Envio Internacional';
+        textElement2.classList.add('text2');
+        textContainer.appendChild(textElement2);
+
+        productDetails.appendChild(textContainer);
+
+        // Adicione o preço
         var priceElement = document.createElement('p');
         priceElement.textContent = 'R$' + selectedProductPrice;
-        priceElement.style.marginLeft = 'auto'; // Move o preço para a direita
-        productDetails.appendChild(priceElement);
-    </script>
+        priceElement.classList.add('price');
+        textContainer.appendChild(priceElement);
 
+        var buttonContainer = document.createElement('div');
+        buttonContainer.classList.add('button-container');
+
+        var addToCartButton = document.createElement('button');
+        addToCartButton.textContent = 'Adicionar ao Carrinho';
+        addToCartButton.classList.add('add-to-cart');
+        buttonContainer.appendChild(addToCartButton);
+
+        textContainer.appendChild(buttonContainer);
+
+        productDetails.appendChild(textContainer);
+    </script>
+    <style>
+        .text {
+            font-size: 200%;
+            margin-bottom: 1rem;
+        }
+        .text2 {
+            margin-bottom: 2rem;
+            font-size: 80%;
+        }
+        .price {
+            font-size: 150%;
+        }
+        .button-container {
+            margin-left: auto;
+        }
+        .add-to-cart {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 <!--
     <script>
         // Recupere os detalhes do produto selecionado do localStorage
