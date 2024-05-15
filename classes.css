@@ -4,13 +4,14 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    max-width: 100%;
 }
 .header {
     background-color: #101010;
     color: #ffffff;
     height: 8rem;
     margin: 0;
-    width: 110%;
+    width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -27,13 +28,19 @@ body {
     background-color: #101010;
     color: #ffffff;
     height: 3rem;
-    width: 100%;
+    margin: 0;
+    width: 95.8%; /*necessário para não criar barra horizontal, tamanho exato*/
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     align-items: center;
     margin-top: auto;
     padding: 2rem;
+}
+
+.footerlogo {
+    width: 10rem;
+    height: 5rem;
 }
 
 .nav {
@@ -62,4 +69,13 @@ body {
 .margin-text-div {
     margin-left: 2rem;
     margin-right: 2rem;
+}
+
+.shopcart-image {
+        width: 4.7rem; /* 70px */
+        height: auto;
+        float: right;
+        margin-top: -6.3%;
+        padding-top: 1rem;
+        padding-right: 5rem;
 }
