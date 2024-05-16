@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="classes.css">
     <script src="scripts.js"></script>
+    <script src="OwlCarousel/dist/owl.carousel.min.js"></script>
     <title>View Product - SlikTick</title>
 </head>
 <body>
@@ -75,7 +78,6 @@
     <style>
         .text {
             font-size: 200%;
-            margin-bottom: 1rem;
         }
         .text2 {
             margin-bottom: 2rem;
@@ -94,6 +96,10 @@
             padding: 8px 16px;
             border-radius: 5px;
             cursor: pointer;
+            transition: .2s;
+        }
+        .add-to-cart:hover {
+            color: #dcdcdc;
         }
     </style>
 <!--
@@ -119,7 +125,6 @@
     </script>
 -->
     <footer class="footer">
-        <img src="img/Slick_Tick.png" alt="Logo" class="footerlogo">
         <div class="abouts">
             <a class="about-txt" href="about.html">Sobre</a>
             <a class="about-txt" href="link">Suporte</a>
