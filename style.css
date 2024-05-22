@@ -80,3 +80,28 @@
     align-items: center; /* Centraliza o conteúdo verticalmente */
     margin-top: 40px;
 }
+#cart{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    background-color: #dcdcdc;
+    border-radius: 30px;
+    height: 80%;
+    width: 80%;
+    margin: 150px 0 0 150px;
+}
+.cartproduct {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.cartproductsimage {
+    height: 8rem;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    border-radius: 15px;
+}
+
+.producttext2 {
+    margin-right: 2rem;
+}
