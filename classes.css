@@ -57,8 +57,9 @@ body {
 }
 
 .margin-text-div {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    font-size: 125%;
 }
 
 .shopcart-image {
